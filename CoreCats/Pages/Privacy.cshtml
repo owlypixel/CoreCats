@@ -1,0 +1,9 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Privacy Policy";
+    Model.Response.Cookies.Append("owl", "value", new Microsoft.AspNetCore.Http.CookieOptions { IsEssential = false });
+}
+<h2>@ViewData["Title"]</h2>
+
+<p>Use this page to detail your site's privacy policy.</p>
